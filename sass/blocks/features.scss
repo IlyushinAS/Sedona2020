@@ -1,0 +1,82 @@
+.features {
+  text-align: center;
+}
+
+.features__slogan {
+  margin-top: 39px;
+  margin-bottom: 31px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @include slogan($text-color-black);
+
+  @media (min-width: $tablet-width) {
+    margin-top: 49px;
+    padding-left: 160px;
+    padding-right: 160px;
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 350px;
+    padding-right: 350px;
+  }
+}
+
+.features__text {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.features__item {
+
+  &:first-child {
+
+    .description__wrapper {
+      @media (max-width: $mobile-width-only) {
+        position: relative;
+        min-height: 211px;
+        clip-path: url(../img/bg-triangle.svg);
+      }
+
+      /*&::before {
+        @media (max-width: $mobile-width-only) {
+          content: "";
+          position: absolute;
+          left: -1px;
+          right: -1px;
+          top: -1px;
+
+          height: 38px;
+          background-image: url(../img/bg-triangle.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }*/
+    }
+
+    .description__slogan {
+      @media (max-width: $mobile-width-only) {
+        margin-top: 58px;
+      }
+    }
+  }
+}

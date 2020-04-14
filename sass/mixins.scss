@@ -1,0 +1,15 @@
+@mixin slogan($color) {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $color;
+}
+
+@mixin form-text {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+  color: $text-color-black;
+}

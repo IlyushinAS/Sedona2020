@@ -1,0 +1,82 @@
+.controls {
+  display: flex;
+  align-items: center;
+  height: 66px;
+  background-color: $bg-color-grey;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    height: 93px;
+    background-color: transparent;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.controls__button {
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  pointer-events: all;
+  background-color: transparent;
+
+  &--repeat {
+    width: 16px;
+    height: 20px;
+    margin-left: 25px;
+    margin-right: auto;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 35px;
+    }
+  }
+
+  &--subtitles {
+    width: 32px;
+    height: 20px;
+    margin-right: 31px;
+  }
+
+  &--fullscreen {
+    width: 20px;
+    height: 20px;
+    margin-right: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 41px;
+    }
+  }
+}
+
+.controls__icon {
+  fill: $control-mobile;
+
+  @media (min-width: $tablet-width) {
+    fill: $bg-color-white;
+  }
+}
+
+.controls__button {
+  &:hover,
+  &:focus {
+    outline: none;
+
+    .controls__icon{
+      fill: $control-mobile--hover;
+
+      @media (min-width: $tablet-width) {
+        fill: $input-bg-color--active;
+      }
+    }
+  }
+
+  &:active {
+    outline: none;
+
+    .controls__icon{
+      opacity: 0.3;
+    }
+  }
+}

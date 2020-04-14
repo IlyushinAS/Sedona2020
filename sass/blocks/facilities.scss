@@ -1,0 +1,175 @@
+.facilities {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 24px;
+  margin-bottom: 19px;
+  padding: 0;
+  list-style: none;
+  background-color: $bg-color-white;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin: 0;
+  }
+}
+
+.facilities__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    width: 256px;
+    min-height: 330px;
+
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    min-height: 326px;
+  }
+
+  &:first-child {
+    @media (min-width: $tablet-width) {
+      order: -2;
+    }
+  }
+
+  &:last-child {
+    @media (min-width: $tablet-width) {
+      order: -1;
+    }
+  }
+}
+
+.facilities__slogan {
+  @include slogan($text-color-black);
+
+  position: relative;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  padding-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 132px;
+    margin-bottom: 23px;
+    padding-left: 0;
+    padding-top: 30px;
+    font-size: 21px;
+  }
+
+  &--house::before {
+    content: "";
+
+    position: absolute;
+    top: -10px;
+    left: 1px;
+
+    width: 39px;
+    height: 37px;
+
+    background-image: url(../img/icon-house.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      top: -72px;
+      left: 50%;
+      margin-left: -37.5px;
+
+      width: 75px;
+      height: 72px;
+    }
+  }
+
+  &--gifs::before{
+    content: "";
+
+    position: absolute;
+    top: -12px;
+    left: 5px;
+
+    width: 32px;
+    height: 38px;
+
+    background-image: url(../img/icon-gift.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      top: -75px;
+      left: 50%;
+      margin-left: -32px;
+
+      width: 64px;
+      height: 75px;
+    }
+  }
+
+  &--burger::before {
+    content: "";
+
+    position: absolute;
+    top: -7px;
+    left: -2px;
+
+    width: 40px;
+    height: 36px;
+
+    background-image: url(../img/icon-burger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      top: -69px;
+      left: 50%;
+      margin-left: -38.5px;
+
+      width: 77px;
+      height: 69px;
+    }
+  }
+}
+
+.facilities__text {
+  margin-top: 0;
+  margin-bottom: 19px;
+  padding-left: 50px;
+  line-height: 21px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+
+  br {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--padding {
+    @media (min-width: $tablet-width) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 58px;
+      padding-right: 58px;
+    }
+  }
+}

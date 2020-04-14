@@ -1,0 +1,5 @@
+.slogan {
+  @include slogan($text-color-black);
+
+  font-size: 21px;
+}

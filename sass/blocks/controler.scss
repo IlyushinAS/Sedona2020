@@ -1,0 +1,38 @@
+.controler {
+  height: 45px;
+  padding-top: 22px;
+  padding-left: 22px;
+  padding-right: 22px;
+  box-sizing: border-box;
+  background-color: rgba(1, 1, 1, 0.6);
+
+  @media (min-width: $tablet-width) {
+    height: 93px;
+    padding-top: 45px;
+    padding-left: 93px;
+    padding-right: 166px;
+  }
+}
+
+.controler__bar {
+  position: relative;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.controler__toggle {
+  position: absolute;
+  top: -3px;
+  left: 36px;
+
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: $bg-color-white;
+
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    left: 113px;
+  }
+}

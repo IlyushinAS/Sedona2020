@@ -1,0 +1,44 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+@import "normalize.scss";
+@import "scaffolding.scss";
+@import "visually-hidden.scss";
+
+/*Общие блоки для страниц*/
+@import "blocks/page.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main.scss";
+@import "blocks/button.scss";
+@import "blocks/main-footer.scss";
+
+/*Блоки в футере*/
+@import "blocks/slogan.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+
+/*Блоки в index*/
+@import "blocks/site-list.scss";
+@import "blocks/features.scss";
+@import "blocks/description.scss";
+@import "blocks/facilities.scss";
+@import "blocks/reservation.scss";
+
+/*Общие блоки на inner-page*/
+@import "blocks/inner-page-header.scss";
+
+/*Блоки в photo*/
+@import "blocks/photos.scss";
+@import "blocks/photograph.scss";
+@import "blocks/like.scss";
+@import "blocks/video.scss";
+@import "blocks/controler.scss";
+@import "blocks/controls.scss";
+
+/*Блоки в form*/
+@import "blocks/review.scss";
+@import "blocks/field.scss";
+
+/*Поп-апы*/
+@import "blocks/pop-up.scss";

@@ -1,0 +1,39 @@
+.inner-page-header {
+  text-align: center;
+}
+
+.inner-page-header__title {
+  margin-top: 39px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 27px;
+
+  @include slogan($text-color-black);
+
+  @media (min-width: $tablet-width) {
+    margin-top: 77px;
+    margin-bottom: 31px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 114px;
+  }
+}
+
+.inner-page-header__slogan {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 163px;
+    margin-right: 163px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 380px;
+    margin-right: 380px;
+  }
+}

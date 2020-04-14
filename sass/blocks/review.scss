@@ -1,0 +1,304 @@
+.review {
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: 74px;
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 120px;
+    margin-left: 120px;
+    margin-top: 59px;
+    margin-bottom: 66px;
+  }
+}
+
+.review__form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.review__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 19px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 1px solid $bg-color-disabled;
+  }
+
+  &--radio {
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      width: 324px;
+      margin-bottom: 71px;
+      order: -1;
+
+      &::after {
+        @media (min-width: $tablet-width) {
+          content: "";
+
+          position: absolute;
+
+          top: 6px;
+          bottom: 0;
+          right: 0;
+
+          width: 1px;
+          background-color: $bg-color-lines;
+        }
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 480px;
+      margin-bottom: 69px;
+    }
+  }
+
+  &--name {
+    @media (min-width: $tablet-width) {
+      box-sizing: border-box;
+      width: 324px;
+      margin-bottom: 71px;
+      padding-left: 58px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 480px;
+      margin-bottom: 69px;
+      padding-left: 80px;
+    }
+  }
+
+  &--info {
+    @media (min-width: $tablet-width) {
+      width: 648px;
+      margin-bottom: 54px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 960px;
+    }
+  }
+
+  &--checkbox {
+    @media (min-width: $tablet-width) {
+      width: 648px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 960px;
+    }
+  }
+
+  &--textarea {
+    margin-bottom: 51px;
+
+    @media (min-width: $tablet-width) {
+      width: 648px;
+      margin-bottom: 58px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 960px;
+    }
+  }
+}
+
+.review__title {
+  margin-top: 0;
+  text-align: center;
+  @include slogan($text-color-black);
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+
+  &--name {
+    margin-bottom: 21px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 54px;
+      text-align: left;
+    }
+  }
+
+  &--info {
+    margin-bottom: 28px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 21px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 73px;
+    }
+
+    &::before,
+    &::after {
+
+      @media (min-width: $tablet-width) {
+        content: "";
+
+        width: 125px;
+        height: 1px;
+
+        background-color: $bg-color-lines;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+      }
+    }
+  }
+
+  &--radio {
+    margin-bottom: 36px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 70px;
+      text-align: left;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 72px;
+      margin-left: 80px;
+    }
+  }
+
+  &--checkbox {
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      margin-bottom: 55px;
+    }
+
+    br {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+      }
+    }
+
+    &::before,
+    &::after {
+
+      @media (min-width: $tablet-width) {
+        content: "";
+
+        width: 125px;
+        height: 1px;
+
+        background-color: $bg-color-lines;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+      }
+    }
+  }
+
+  &--textarea {
+    margin-bottom: 16px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      margin-bottom: 56px;
+    }
+
+    &::before,
+    &::after {
+
+      @media (min-width: $tablet-width) {
+        content: "";
+
+        width: 125px;
+        height: 1px;
+
+        background-color: $bg-color-lines;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+      }
+    }
+  }
+}
+
+.review__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &--info {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &--checkbox {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 95px;
+      margin-bottom: 23px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 0;
+      margin-bottom: 21px;
+      justify-content: space-between;
+    }
+  }
+}
+
+.review__button {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 324px;
+    margin-left: 0px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 480px;
+  }
+}
+
+.review__footnote {
+  display: none;
+  margin-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-left: auto;
+  }
+
+  sup {
+    top: -0.2em;
+  }
+}
+

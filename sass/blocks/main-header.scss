@@ -1,0 +1,140 @@
+.main-header {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+
+.main-header__wrapper {
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+    min-height: 56px;
+  }
+}
+
+.main-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -51px;
+
+  width: 102px;
+  height: 84px;
+
+  @media (min-width: $desktop-width) {
+    width: 188px;
+    height: 96px;
+    margin-left: -94px;
+  }
+}
+
+.main-header__background {
+  box-sizing: border-box;
+  padding: 90px 20px 85px 20px;
+  min-height: 389px;
+  background-image:
+  url(../img/bg-intro-triangle-mobile.svg),
+  url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position:
+  50% 100%,
+  center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+    url(../img/bg-intro-triangle-mobile.svg),
+    url(../img/bg-back-mobile@2x.jpg);
+    background-repeat: no-repeat;
+    background-position:
+    50% 100%,
+    center;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 518px;
+    padding: 77px 154px 91px 154px;
+    background-image:
+    url(../img/bg-intro-triangle-tablet.svg),
+    url(../img/bg-back-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-position:
+    50% 100%,
+    center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+      url(../img/bg-intro-triangle-tablet.svg),
+      url(../img/bg-back-tablet@2x.jpg);
+      background-repeat: no-repeat;
+      background-position:
+      50% 100%,
+      center;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 78px 370px 90px 370px;
+    background-image:
+    url(../img/bg-intro-triangle-desktop.svg),
+    url(../img/bg-back-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position:
+    50% 100%,
+    center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+      url(../img/bg-intro-triangle-desktop.svg),
+      url(../img/bg-back-desktop@2x.jpg);
+      background-repeat: no-repeat;
+      background-position:
+      50% 100%,
+      center;
+    }
+  }
+
+  &--inner-page {
+    min-height: 158px;
+    padding: 52px 46px 67px 45px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 290px;
+      padding: 95px 154px 117px 156px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 301px;
+      padding: 102px 370px 120px 369px;
+    }
+  }
+}
+
+.main-header__slogan {
+  min-height: 214px;
+  background-image: url(../img/text-sedona-index.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 350px;
+  }
+
+  &--inner-page {
+    min-height: 39px;
+    background-image: url(../img/text-sedona.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      min-height: 78px;
+    }
+  }
+}

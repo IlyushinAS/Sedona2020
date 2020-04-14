@@ -1,0 +1,35 @@
+.copyright__link {
+  position: relative;
+  display: block;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 38px;
+  line-height: 26px;
+  color: $text-color-black;
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    .copyright__icon {
+      fill: $bg-color-main;
+    }
+  }
+
+  &:active {
+    outline: none;
+
+    .copyright__icon {
+      fill: $text-color-black;
+      opacity: 0.3;
+    }
+  }
+}
+
+.copyright__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 27px;
+  height: 34px;
+}

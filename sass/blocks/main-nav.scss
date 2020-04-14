@@ -1,0 +1,81 @@
+.main-nav__list {
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 2;
+
+  display: block;
+  width: 23px;
+  height: 22px;
+  padding: 0;
+
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 4px;
+  background-color: $bg-color-main;
+  box-shadow:
+  0 9px 0 0 $bg-color-main,
+  0 18px 0 0 $bg-color-main;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 9px;
+    left: -3px;
+
+    width: 28px;
+    height: 4px;
+    background-color: $bg-color-white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+//Скрытие навигации
+.main-nav--closed .main-nav__list {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}

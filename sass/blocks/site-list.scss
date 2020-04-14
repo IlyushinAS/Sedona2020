@@ -1,0 +1,136 @@
+.site-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  &::after {
+    @media (max-width: $mobile-width-only) {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      height: 3px;
+      box-shadow: inset 0px -3px 2px -2px rgba(1, 1, 1, 0.2);
+      pointer-events: none;
+    }
+  }
+}
+
+.site-list__item {
+  @media (min-width: $tablet-width) {
+    width: 114px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 239px;
+  }
+
+  &:nth-child(2n+1) {
+    @media (min-width: $tablet-width) {
+      margin-right: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
+    }
+  }
+
+  &:nth-child(2) {
+    @media (min-width: $tablet-width) {
+      margin-right: auto;
+    }
+  }
+
+  &:not(:first-child) .site-list__link {
+    @media (max-width: $mobile-width-only) {
+      border-top: 1px inset rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  &:not(:last-child) .site-list__link {
+    @media (max-width: $mobile-width-only) {
+      border-bottom: 1px inset rgba(1, 1, 1, 0.2);
+    }
+  }
+
+  &:last-child .site-list__link {
+      min-height: 55px;
+  }
+}
+
+.site-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 56px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $text-color-white;
+  background-color: $bg-color-main;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 14px;
+    line-height: 26px;
+    color: $text-color-black;
+    background-color: transparent;
+  }
+
+  &[href]:hover,
+  &[href]:focus {
+    outline: none;
+    background-color: $bg-color-main--hover;
+
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+      color: $text-color-blue;
+    }
+  }
+
+  &[href]:active {
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+    background-color: $bg-color-main--active;
+
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+      color: rgba(1, 1, 1, 0.3);
+    }
+  }
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      color: $text-color--active;
+    }
+
+    &:hover,
+    &:focus {
+      @media (min-width: $tablet-width) {
+        color: $text-color--active--hover;
+      }
+    }
+
+    &:active {
+      @media (min-width: $tablet-width) {
+        color: $text-color--active--down;
+      }
+    }
+  }
+}
+
