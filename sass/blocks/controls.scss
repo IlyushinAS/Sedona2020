@@ -53,7 +53,7 @@
   &:focus {
     outline: none;
 
-    .controls__icon{
+    .controls__icon {
       fill: $control-mobile--hover;
 
       @media (min-width: $tablet-width) {
@@ -65,7 +65,7 @@
   &:active {
     outline: none;
 
-    .controls__icon{
+    .controls__icon {
       opacity: 0.3;
     }
   }
