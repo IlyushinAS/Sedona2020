@@ -1,5 +1,4 @@
 .main-nav__list {
-
   @media (min-width: $tablet-width) {
     padding-left: 20px;
     padding-right: 20px;
@@ -41,9 +40,7 @@
 
   height: 4px;
   background-color: $bg-color-main;
-  box-shadow:
-  0 9px 0 0 $bg-color-main,
-  0 18px 0 0 $bg-color-main;
+  box-shadow: 0 9px 0 0 $bg-color-main, 0 18px 0 0 $bg-color-main;
 }
 
 .main-nav--opened .main-nav__toggle {

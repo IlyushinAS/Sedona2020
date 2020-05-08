@@ -48,17 +48,7 @@
       margin-right: 41px;
     }
   }
-}
 
-.controls__icon {
-  fill: $control-mobile;
-
-  @media (min-width: $tablet-width) {
-    fill: $bg-color-white;
-  }
-}
-
-.controls__button {
   &:hover,
   &:focus {
     outline: none;
@@ -78,5 +68,13 @@
     .controls__icon{
       opacity: 0.3;
     }
+  }
+}
+
+.controls__icon {
+  fill: $control-mobile;
+
+  @media (min-width: $tablet-width) {
+    fill: $bg-color-white;
   }
 }

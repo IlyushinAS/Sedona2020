@@ -145,9 +145,9 @@
   &--grey {
     color: $text-color-gray;
 
-      &::before,
-      &::after {
-    background-color: $text-color-gray;
+    &::before,
+    &::after {
+      background-color: $text-color-gray;
     }
   }
 }

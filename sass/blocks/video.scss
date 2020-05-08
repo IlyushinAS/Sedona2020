@@ -16,6 +16,7 @@
   margin-bottom: 26px;
   padding-left: 20px;
   padding-right: 20px;
+
   @include slogan($text-color-black);
 
   @media (min-width: $tablet-width) {
@@ -66,12 +67,12 @@
   display: block;
   width: 320px;
   height: 201px;
-  background-image: url(../img/video-mobile@1x.jpg);
+  background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url(../img/video-mobile@2x.jpg);
+    background-image: url("../img/video-mobile@2x.jpg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -79,12 +80,12 @@
   @media (min-width: $tablet-width) {
     width: 648px;
     height: 500px;
-    background-image: url(../img/video-tablet@1x.jpg);
+    background-image: url("../img/video-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url(../img/video-tablet@2x.jpg);
+      background-image: url("../img/video-tablet@2x.jpg");
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -93,12 +94,12 @@
   @media (min-width: $desktop-width) {
     width: 800px;
     height: 500px;
-    background-image: url(../img/video-desktop@1x.jpg);
+    background-image: url("../img/video-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url(../img/video-desktop@2x.jpg);
+      background-image: url("../img/video-desktop@2x.jpg");
       background-repeat: no-repeat;
       background-position: center;
     }

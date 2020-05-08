@@ -47,30 +47,13 @@
 }
 
 .features__item {
-
   &:first-child {
-
     .description__wrapper {
       @media (max-width: $mobile-width-only) {
         position: relative;
         min-height: 211px;
-        clip-path: url(../img/bg-triangle.svg);
+        clip-path: url("../img/bg-triangle.svg");
       }
-
-      /*&::before {
-        @media (max-width: $mobile-width-only) {
-          content: "";
-          position: absolute;
-          left: -1px;
-          right: -1px;
-          top: -1px;
-
-          height: 38px;
-          background-image: url(../img/bg-triangle.svg);
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-      }*/
     }
 
     .description__slogan {

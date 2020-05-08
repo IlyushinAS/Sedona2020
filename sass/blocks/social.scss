@@ -9,7 +9,6 @@
 }
 
 .social__item {
-
   &:not(:last-child) {
     margin-right: 6px;
   }
@@ -48,7 +47,7 @@
   &--twitter::before {
     width: 18px;
     height: 16px;
-    background-image: url(../img/spr-icon-twitter.svg);
+    background-image: url("../img/spr-icon-twitter.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -56,7 +55,7 @@
   &--facebook::before {
     width: 9px;
     height: 18px;
-    background-image: url(../img/spr-icon-facebook.svg);
+    background-image: url("../img/spr-icon-facebook.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -64,7 +63,7 @@
   &--youtube::before {
     width: 20px;
     height: 14px;
-    background-image: url(../img/spr-icon-youtube.svg);
+    background-image: url("../img/spr-icon-youtube.svg");
     background-repeat: no-repeat;
     background-position: center;
   }

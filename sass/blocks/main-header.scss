@@ -40,64 +40,40 @@
   box-sizing: border-box;
   padding: 90px 20px 85px 20px;
   min-height: 389px;
-  background-image:
-  url(../img/bg-intro-triangle-mobile.svg),
-  url(../img/bg-back-mobile@1x.jpg);
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position:
-  50% 100%,
-  center;
+  background-position: 50% 100%, center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image:
-    url(../img/bg-intro-triangle-mobile.svg),
-    url(../img/bg-back-mobile@2x.jpg);
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
     background-repeat: no-repeat;
-    background-position:
-    50% 100%,
-    center;
+    background-position: 50% 100%, center;
   }
 
   @media (min-width: $tablet-width) {
     min-height: 518px;
     padding: 77px 154px 91px 154px;
-    background-image:
-    url(../img/bg-intro-triangle-tablet.svg),
-    url(../img/bg-back-tablet@1x.jpg);
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position:
-    50% 100%,
-    center;
+    background-position: 50% 100%, center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image:
-      url(../img/bg-intro-triangle-tablet.svg),
-      url(../img/bg-back-tablet@2x.jpg);
+      background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
       background-repeat: no-repeat;
-      background-position:
-      50% 100%,
-      center;
+      background-position: 50% 100%, center;
     }
   }
 
   @media (min-width: $desktop-width) {
     padding: 78px 370px 90px 370px;
-    background-image:
-    url(../img/bg-intro-triangle-desktop.svg),
-    url(../img/bg-back-desktop@1x.jpg);
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position:
-    50% 100%,
-    center;
+    background-position: 50% 100%, center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image:
-      url(../img/bg-intro-triangle-desktop.svg),
-      url(../img/bg-back-desktop@2x.jpg);
+      background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@2x.jpg");
       background-repeat: no-repeat;
-      background-position:
-      50% 100%,
-      center;
+      background-position: 50% 100%, center;
     }
   }
 
@@ -119,7 +95,7 @@
 
 .main-header__slogan {
   min-height: 214px;
-  background-image: url(../img/text-sedona-index.svg);
+  background-image: url("../img/text-sedona-index.svg");
   background-repeat: no-repeat;
   background-position: center;
 
@@ -129,7 +105,7 @@
 
   &--inner-page {
     min-height: 39px;
-    background-image: url(../img/text-sedona.svg);
+    background-image: url("../img/text-sedona.svg");
     background-repeat: no-repeat;
     background-position: center;
 

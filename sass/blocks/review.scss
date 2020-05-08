@@ -118,6 +118,7 @@
 .review__title {
   margin-top: 0;
   text-align: center;
+
   @include slogan($text-color-black);
 
   @media (min-width: $tablet-width) {
@@ -149,7 +150,6 @@
 
     &::before,
     &::after {
-
       @media (min-width: $tablet-width) {
         content: "";
 
@@ -200,7 +200,6 @@
 
     &::before,
     &::after {
-
       @media (min-width: $tablet-width) {
         content: "";
 
@@ -229,7 +228,6 @@
 
     &::before,
     &::after {
-
       @media (min-width: $tablet-width) {
         content: "";
 
@@ -280,7 +278,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 324px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
